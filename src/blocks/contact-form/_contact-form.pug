@@ -1,0 +1,12 @@
+mixin contact-form
+    .row
+        .col-lg-6.col-12.order-lg-1.order-md-2.order-2
+            form.contact-form(action='')
+                .contact-form__wrapper
+                    input.contact-form__input#name(type='text' name='your name' placeholder='Your name...' required)
+                    input.contact-form__input#email(type='email' name='your email' placeholder='Your email...' required)
+                    input.contact-form__input#phone(type='text' name='your phone' placeholder='Your phone number...' data-mask='(000) 000-0000' minlength='8' required)
+                    textarea.contact-form__input.contact-form__input--textarea#message(type='text' name='your message' placeholder='Your message...' cols='30' rows='12' required)
+                    input.contact-form__submit(type='submit' value='Contact me')
+        +contact-info
+        

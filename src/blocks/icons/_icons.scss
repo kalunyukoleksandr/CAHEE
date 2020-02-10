@@ -1,0 +1,30 @@
+.icons { 
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+
+    &--footer {
+        width: 75px;
+        height: 25px;
+        color: #b9b9b9;
+        margin-top: -3px;
+
+        &:hover {
+            color: #f12b55;
+        }
+    }
+
+    &--nav {
+        color: #262626;
+        height: 52px;
+        width: 126px;
+
+        &:hover {
+            color: #ff6033;
+        }
+    }
+    
+} 

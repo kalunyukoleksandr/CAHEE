@@ -1,0 +1,44 @@
+mixin gallery
+    .gallery#gallery
+        .container.container--lg
+            .gallery__header
+                .row
+                    .col-12.d-flex.flex-column.align-items-center
+                        h2.gallery__heading Gallery
+                        p.gallery__paragraph Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            
+            .gallery__panel
+                .row
+                    .col-lg-8.col-md-6.mb-md-4.mb-sm-4.mb-4
+                            .gallery__img-wrapper
+                                +picture("gallery01","png","pork on a plate").gallery__img
+                    .col-md-6.d-md-block.d-lg-none.mb-md-4.mb-sm-4.mb-4
+                            .gallery__img-wrapper
+                                +picture("gallery02","png","red peppers").gallery__img
+                    .col-lg-4.d-lg-block.d-xl-block.d-none
+                        .row
+                            .col-lg-12.mb-lg-4
+                                .gallery__img-wrapper 
+                                    +picture("gallery02","png","red peppers").gallery__img
+                            .col-lg-12.mb-lg-3
+                                .gallery__img-wrapper 
+                                    +picture("gallery03","png","peaches").gallery__img
+                .row
+                    .col-md-6.d-md-block.d-lg-none.mb-md-4.mb-sm-4.mb-4
+                        .gallery__img-wrapper 
+                            +picture("gallery03","png","peaches").gallery__img
+                    .col-md-6.d-md-block.d-lg-none.d-none.mb-md-4.mb-sm-4.mb-4
+                        .gallery__img-wrapper 
+                            +picture("gallery04","png","two hands holding full bear glasses").gallery__img
+                .row
+                    .col-lg-6.d-md-none.d-lg-block.mb-sm-4.mb-4
+                        .gallery__img-wrapper 
+                            +picture("gallery04","png","two hands holding full bear glasses").gallery__img
+                    .col-lg-6.col-md-6
+                        .gallery__img-wrapper 
+                            +picture("gallery05","png","wine poured from a bottle into a glass").gallery__img
+            .gallery__bottom                
+                .row
+                    .col-12.d-flex.justify-content-center
+                        a.btn.btn--gallery(href="javascript:void(0)") VIEW MORE
+            

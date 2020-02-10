@@ -1,0 +1,27 @@
+mixin nav 
+    .col-xl-12.offset-xl-0.col-lg-10.offset-lg-1.col-12
+        .nav
+            .nav__wrapper.d-flex.justify-content-between
+                    .nav__logo
+                        a.nav__logo-link(href='#')
+                            svg.icons.icons--nav.nav__icon
+                                    use(xlink:href="#icon-logo")
+
+                    .nav__header.d-flex.justify-content-between
+                        input.nav__checkbox(type='checkbox' id='burger')
+                        label.nav__burger(for='burger')
+                            i.fas.fa-hamburger
+                            i.fas.fa-times
+                        ul.nav__list.d-flex.justify-content-between
+                            li.nav__item
+                                a.nav__link(href='#home') HOME
+                            li.nav__item
+                                a.nav__link(href='#about') ABOUT
+                            li.nav__item
+                                a.nav__link(href='#services') SERVICES
+                            li.nav__item
+                                a.nav__link(href='#gallery') GALLERY
+                            li.nav__item
+                                a.nav__link(href='#blog') BLOG
+                            li.nav__item
+                                a.nav__link(href='#contact') CONTACT

@@ -1,0 +1,40 @@
+mixin panel
+    .row
+        .col-xl-4.offset-xl-0.col-lg-4.offset-lg-2.col-md-5.offset-md-1.col-sm-6.offset-sm-0.col-10.offset-1
+            .panel
+                .panel__wrapper
+                    a.panel__link(href='#')
+                        +picture("blog01","jpg","juice").panel__img
+                    time.panel__date
+                        span.panel__day 20
+                        span.panel__month NOV
+                    .panel__text
+                        h3.panel__heading Green Smoothies: Too Much of a Good Thing?
+                        author.panel__author By Auskteez - 2 hours ago
+        .col-xl-4.offset-xl-0.col-lg-4.offset-lg-0.col-md-5.offset-md-0.col-sm-6.offset-sm-0.col-10.offset-1
+            .panel
+                .panel__wrapper
+                    a.panel__link(href='#')
+                        +picture("blog02","jpg","mashed fruit").panel__img
+                    time.panel__date
+                        span.panel__day 14
+                        span.panel__month NOV
+                    .panel__text
+                        h3.panel__heading Growing Food and a “Thirst” for Innovation
+                        author.panel__author By Auskteez - 3 hours ago
+        .col-xl-4.offset-xl-0.col-lg-4.offset-lg-4.col-md-5.offset-md-1.col-sm-6.offset-sm-3.col-10.offset-1
+            .panel
+                .panel__wrapper
+                    a.panel__link(href='#')
+                        +picture("blog03","jpg","berries").panel__img
+                    time.panel__date
+                        span.panel__day 10
+                        span.panel__month NOV
+                    .panel__text
+                        h3.panel__heading Pesticides &amp; Food: What You Need to Know
+                        author.panel__author By Auskteez - 6 hours ago
+    .row
+        .col-12
+            .panel__button
+                .panel__button-wrapper
+                    +btn

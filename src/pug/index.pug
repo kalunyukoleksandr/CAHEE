@@ -1,0 +1,43 @@
+include ../blocks/contact/_contact.pug
+include ../blocks/contact-form/_contact-form.pug
+include ../blocks/contact-info/_contact-info.pug
+include ../blocks/footer/_footer.pug
+include ../blocks/about/_about.pug
+include ../blocks/blog/_blog.pug
+include ../blocks/panel/_panel.pug
+include ../blocks/btn/_btn.pug
+include ../pug/icons.svg
+include ../blocks/home/_home.pug
+include ../blocks/nav/_nav.pug
+include ../blocks/subscribe/_subscribe.pug
+include ../blocks/services/_services.pug
+include ../blocks/panel-column/_panel-column.pug
+include ../blocks/gallery/_gallery.pug
+include ../blocks/picture/_picture.pug
+
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="description", content="We make the best product")
+        link(rel="icon" href="./favicon.ico" type="image/x-icon")
+        title Cahee
+        link(rel="stylesheet", href="./css/style.css")
+    body
+        +home
+        +about
+        +services
+        +gallery
+        +subscribe
+        +blog
+        +contact
+        +footer
+
+    script(src='https://kit.fontawesome.com/f811e9d5c2.js' crossorigin='anonymous')
+    script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+    script(src="./plugins/jquery.mask.min.js")
+    script(src="./script/modernizr-custom.js" async defer)
+    script(src="./plugins/lazysizes.min.js" async="")

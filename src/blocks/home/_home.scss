@@ -1,0 +1,89 @@
+.home {
+        background-position: 81% 50%;
+        background-repeat: no-repeat;
+        background-color: #f9f8fb;
+
+        @media screen and (max-width: 1199px) {
+            background-size: 50%;
+            background-position: 88% 50%;
+        }
+
+        @media screen and (max-width: 991px) {
+            background-size: 41%;
+            background-position: 91% 50%;
+        }
+
+        @media screen and (max-width: 765px) {
+            background-size: 41%;
+            background-position: 89% 85%
+        }
+
+    &__wrapper {
+        padding-top: 50px;
+
+        @media screen and (max-width: 765px) {
+            padding-top: 0;
+        }
+
+    }
+        
+    &__info-top {
+        padding-bottom: 312px;
+
+        @media screen and (max-width: 991px) {
+            padding-bottom: 200px;
+        }
+
+        @media screen and (max-width: 765px) {
+            padding-bottom: 100px;
+            padding-top: 70px;
+        }
+
+        @media screen and (max-width: 575px) {
+            padding-bottom: 100px;
+        }
+
+    }
+
+    &__info-bottom {
+        padding-bottom: 70px
+    }
+
+
+    &__title {
+        color: #262626;
+        font-size: 60px;
+        font-weight: 800;
+        margin-left: -4px;
+        letter-spacing: 1px;
+        padding-bottom: 19px;
+
+        @media screen and (max-width:575px) {
+            font-size: 40px;   
+        }
+
+    }
+
+    &__subtitle {
+        color: #262626;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 27px;
+        margin-bottom: 44px;
+        margin-left: -3px;
+    }
+}
+
+.no-webp .home {
+    background-image: url(../img/header@x1.png);
+    @media screen and (max-width: 575px) {
+        background-image: none;
+    }
+}
+
+.webp .home {
+    background-image: url(../webp/header@x1.webp);
+    @media screen and (max-width: 575px) {
+        background-image: none;
+    }
+}

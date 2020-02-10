@@ -1,0 +1,38 @@
+.contact-info {
+   
+    &__wrapper {
+
+        line-height: 13px;
+
+        @media screen and (min-width:1201px) {
+            margin-left: -25px;
+        }
+
+        @media screen and (max-width:575px) {
+            padding: 10px 10px;  
+        }
+    }
+    
+    &__name {
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    
+    &__item {
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 25px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            text-decoration: underline;
+            background-color: #00c4c4;
+        }
+    }
+
+}
